@@ -46,15 +46,17 @@ right edge of each editor group.
 From the repository root:
 
 ```sh
-plugins/build.sh plugins/community/code-map
-pnpm --dir plugins/community/code-map/web-src test
+pnpm --dir web-src install --frozen-lockfile
+pnpm --dir web-src build
+pnpm --dir web-src test
 ```
 
-The first command installs `web-src/` (its `pnpm-lock.yaml` is committed) and
-builds the page into `web/`, which is gitignored but must exist before packaging.
-The tests run in node against recording fakes of the canvas and the bridge; no
-DOM is needed.
+The first command installs `web-src/` (its `pnpm-lock.yaml` is committed); the
+second builds the page into `web/`, which is gitignored but must exist before
+packaging. The tests run in node against recording fakes of the canvas and the
+bridge; no DOM is needed.
 
-Install it through Settings › Plugins › Install from Disk — the plugin folder, or
-a `.zip` of it (`plugin.toml`, `README.md` and `web/` at the root, `web-src/` left
-out). See the [plugin guide](../../README.md).
+Install it through Settings › Plugins › Install from Disk — the plugin folder, a
+`.zip` of it (`plugin.toml`, `README.md` and `web/` at the root, `web-src/` left
+out), or the signed `sugar-is-everythong.code-map-0.1.0.oiplugin` from a release.
+See the [plugin guide](https://github.com/l0ng-ai/openidea/blob/main/plugins/README.md).

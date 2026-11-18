@@ -1,9 +1,10 @@
-id = "openidea.code-map"
+id = "sugar-is-everythong.code-map"
 name = "Code Map 代码地图"
 version = "0.1.0"
 description = "A minimap beside every text editor: real syntax colours, a translucent block for the visible area, drag or click to jump, wheel scrolls the editor. 每个文本编辑器旁的代码缩略图：真实语法着色，半透明色块标示可见区域，拖拽或点击跳转，滚轮滚动编辑器。"
-authors = ["OpenIDEA contributors"]
+authors = ["sugar-is-everythong"]
 license = "Apache-2.0"
+categories = ["tools"]
 engines.openidea = "^1.10"
 
 [capabilities]
