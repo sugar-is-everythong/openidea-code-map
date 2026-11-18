@@ -1,0 +1,17 @@
+id = "openidea.code-map"
+name = "Code Map 代码地图"
+version = "0.1.0"
+description = "A minimap beside every text editor: real syntax colours, a translucent block for the visible area, drag or click to jump, wheel scrolls the editor. 每个文本编辑器旁的代码缩略图：真实语法着色，半透明色块标示可见区域，拖拽或点击跳转，滚轮滚动编辑器。"
+authors = ["OpenIDEA contributors"]
+license = "Apache-2.0"
+engines.openidea = "^1.10"
+
+[capabilities]
+required = ["editor.read"]
+
+# One panel per editor group, at its right edge; the page reads the group's own
+# editor through the frame bridge, so no plugin code is needed.
+[[contributes.editorPanels]]
+id = "code-map"
+web = "web/index.html"
+width = 120

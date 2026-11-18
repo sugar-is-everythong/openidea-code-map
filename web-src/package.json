@@ -1,0 +1,17 @@
+{
+  "name": "openidea-plugin-code-map-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The Code Map plugin's minimap page; `pnpm build` writes it to ../web.",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^5.0.5"
+  }
+}

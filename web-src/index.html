@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Map</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: var(--openidea-bg, transparent);
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="map" role="img" aria-label="Code map of the open file"></canvas>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
